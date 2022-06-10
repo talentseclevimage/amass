@@ -16,3 +16,11 @@ ENV AMASS_CONFIG=/usr/local/config.ini
 
 RUN go install -v github.com/OWASP/Amass/v3/...@master
 
+COPY ./default_cn.txt /tmp/default_cn.txt
+COPY ./default_en.txt /tmp/default_en.txt
+COPY ./subnames_big_cn.txt /tmp/subnames_big_cn.txt
+COPY ./subnames_cn.txt /tmp/subnames_cn.txt
+COPY ./subnames_medium_cn.txt /tmp/subnames_medium_cn.txt
+COPY ./subnames_big_en.txt /tmp/subnames_big_en.txt
+COPY ./subnames_en.txt /tmp/subnames_en.txt
+COPY ./subnames_medium_en.txt /tmp/subnames_medium_en.txt
